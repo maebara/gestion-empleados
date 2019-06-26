@@ -17,7 +17,7 @@ public class TestFilter extends HttpFilter{
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-			System.out.println("pedido");
+		
 			chain.doFilter(request, response);
 	}
 	

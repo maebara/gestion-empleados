@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="app">
+<html lang="en">
 
 <head>
 
@@ -22,8 +22,6 @@
 
 <!-- Custom styles for this template-->
 <link href="css/sb-admin.css" rel="stylesheet">
-<script type="text/javascript" src="js/angular.js"></script>
-
 
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -33,9 +31,6 @@
 <script src="js/sb-admin.min.js"></script>
 <script src="js/demo/datatables-demo.js"></script>
 
-<!-- Angular Material Library -->
-<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.js"></script>
-  
 <script type="text/javascript" src="js/app.js"></script>
 </head>
 
@@ -83,8 +78,7 @@
 
 
 				<!-- DataTables Example -->
-				<div class="card mb-3" ng-controller="empleadoController"
-					data-ng-init="cargarEmpleados()">
+				<div class="card mb-3">
 					<div class="card-header">
 						<i class="fas fa-table"></i> Empleados
 					</div>
@@ -105,14 +99,14 @@
 								</thead>
 
 								<tbody>
-									<tr ng-repeat="x in empleados">
+									<tr>
 										<td>{{ x.nombre }}</td>
 										<td>{{ x.origen }}</td>
 										<td>{{ x.oficina }}</td>
 										<td>{{ x.edad }}</td>
 										<td>{{ x.fInicio }}</td>
 										<td>{{ x.salario }}</td>
-										<td style="text-align:center;"><a class="iconos" href="#" ng-click=""><i class="fas fa-fw fa-edit" style="text-align:center"></i></a></td>
+										<td style="text-align:center;"><a class="iconos" href="#" ><i class="fas fa-fw fa-edit" style="text-align:center"></i></a></td>
 									</tr>
 								</tbody>
 							</table>

@@ -3,6 +3,7 @@ package com.sergio.entity;
 
 //{nombre: 'pepe2', posicion:'pos', oficina:'Argentina', edad:20, start: date.getFullYear(), salario: 20000},
 public class Empleado {
+	private long id;
 	private String nombre;
 	private String origen;
 	private String oficina;
@@ -45,6 +46,12 @@ public class Empleado {
 	}
 	public void setSalario(int salario) {
 		this.salario = salario;
+	}
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
 	}
 	
 	
